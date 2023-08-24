@@ -10,7 +10,7 @@ AUTHOR_USER_NAME = "Rohii1515"
 SRC_REPO = "PYRJrenderer"
 AUTHOR_EMAIL = "rohidasjondhale1515@gmail.com"
 
-setuptools.setupt(
+setuptools.setup(
     name = SRC_REPO,
     version = __version__,
     author = AUTHOR_USER_NAME,
