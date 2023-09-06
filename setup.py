@@ -17,7 +17,11 @@ setuptools.setup(
     author = AUTHOR_USER_NAME,
     author_email = AUTHOR_EMAIL,
     description = "A Python package for rendering",
-    long_description = long_description,
+    long_description = """
+• Ready to use end-to-end project for real-world business use cases.
+• This package is meant to render Websites, Docs, and Videos in Jupyter Notebooks for easy reference.
+• Developed its documentation using the mkdocs-material library.
+• This package is an OS-independent package as well as tested for multiple versions of python""",
     long_description_content = "text/markdown",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     project_urls={
