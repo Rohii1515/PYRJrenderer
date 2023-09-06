@@ -25,20 +25,19 @@ def get_time_info(URL: str) -> int:
                 logger.info(f"video starts at: {time}")
                 return time
             else:
-                # vid_id, time = split_val("=")[0].split("/")[-1][:-3], 0
-                vid_id, time = split_val("/")[-1].split("=")[-1], 0
+                vid_id, time = split_val[-1], 0
                 _verify_vid_id_len(vid_id)
                 logger.info(f"video starts at: {time}")
                 return time
-        # else:
-        #     if "=" in URL and "&t" in URL:
-        #         vid_id, time = split_val[0].split("/")[-1][:-3], int(split_val[-1])
-        #         _verify_vid_id_len(vid_id)
-        #         logger.info(f"video starts at: {time}")
-        #         return time
-
         else:
-                vid_id, time = URL.split("/")[-1].split("?")[-2], 0
+            if "=" in URL and "&t" in URL:
+                vid_id, time = split_val[0].split("/")[-1][:-3], int(split_val[-1])
+                _verify_vid_id_len(vid_id)
+                logger.info(f"video starts at: {time}")
+                return time
+
+            else:
+                vid_id, time = URL.split("/")[-1], 0
                 _verify_vid_id_len(vid_id)
                 logger.info(f"video starts at: {time}")
                 return time
