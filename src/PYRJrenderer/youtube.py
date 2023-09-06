@@ -36,6 +36,11 @@ def get_time_info(URL: str) -> int:
                 logger.info(f"video starts at: {time}")
                 return time
 
+            elif "/"in URL or "?" in URL:
+                vid_id, time = URL.split("/")[-1].split("?")[-2], 0
+                _verify_vid_id_len(vid_id)
+                logger.info(f"video starts at: {time}")
+                return time
             else:
                 vid_id, time = URL.split("/")[-1], 0
                 _verify_vid_id_len(vid_id)
