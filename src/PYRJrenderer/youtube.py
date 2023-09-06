@@ -1,7 +1,7 @@
 from IPython import display
 from ensure import ensure_annotations
-from PYRJrenderer .custom_exception import InvalidURLException
-from PYRJrenderer .logger import logger
+from PYRJrenderer.custom_exception import InvalidURLException
+from PYRJrenderer.logger import logger
 from py_youtube import Data
 
 
@@ -36,7 +36,7 @@ def get_time_info(URL: str) -> int:
                 logger.info(f"video starts at: {time}")
                 return time
 
-            elif "/"in URL or "?" in URL:
+            elif "/" in URL or "?" in URL:
                 vid_id, time = URL.split("/")[-1].split("?")[-2], 0
                 _verify_vid_id_len(vid_id)
                 logger.info(f"video starts at: {time}")
@@ -46,7 +46,7 @@ def get_time_info(URL: str) -> int:
                 _verify_vid_id_len(vid_id)
                 logger.info(f"video starts at: {time}")
                 return time
-        
+
     except Exception:
         raise InvalidURLException
 
