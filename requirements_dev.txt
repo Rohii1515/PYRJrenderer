@@ -3,6 +3,7 @@ notebook
 py-youtube
 ensure
 mkdocs-material
+importlib-metadata
 
 # dev requirements -
 pytest

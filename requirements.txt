@@ -3,4 +3,5 @@ notebook
 py-youtube
 ensure
 mkdocs-material
+importlib-metadata
 -e .
