@@ -10,4 +10,4 @@ tox
 black
 flake8
 mypy
--e .   // this will check for setup.py and try to install local packages
+-e .   # this will check for setup.py and try to install local packages
