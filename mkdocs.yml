@@ -1,0 +1,73 @@
+# Project information
+site_name: PYRJrenderer
+# defeine TOC or order of website-
+nav:
+  - Home: index.md
+  - APIreference: APIreference.md
+
+site_author: Rohidas Jondhale
+site_description: >-
+  A library for rendering YouTube and reference sites in Jupyter notebooks
+
+# Repository
+repo_name: Rohii1515/PYRJrenderer
+repo_url: https://github.com/Rohii1515/PYRJrenderer
+
+# Configuration
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal
+      accent: lime    
+  # logo: PyTorch_logo_icon.svg
+  
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Rohii1515
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/rohidas-jondhale-7483b4192
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/rohii.15/
+
+extra_javascript:
+  - javascripts/mathjax.js
+  # - javascripts/tawk.js
+  - https://polyfill.io/v3/polyfill.min.js #?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  
+  
+plugins:
+  - search
+
+copyright: |
+  &copy; 2022 <a href="https://github.com/Rohii1515"  target="_blank" rel="noopener">Rohidas Jondhale</a>
