@@ -27,7 +27,7 @@
     ### Short example
     ```python
     from PYRJrenderer import render_site
-    URL = "http://pytorch.org/"
+    URL = "https://pytorch.org/"
     render_site(URL = URL, width = "90%", height = "500")
     ```
 
