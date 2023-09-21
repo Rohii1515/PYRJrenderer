@@ -95,7 +95,13 @@ You can use the `render_site` function to embed web sites in your Jupyter Notebo
 
 project board - https://github.com/users/Rohii1515/projects/2/views/1
 
-## Contributing
-Contributions to PYRJrenderer are welcome! If you find issues or have suggestions for improvements, please open an issue or submit a pull request on GitHub.
-## License
-This project is licensed under the MIT License.
+### Contributing
+If you'd like to contribute to this project, please follow these guidelines:
+
+- Fork the repository.
+- Create a new branch for your feature or bug fix.
+- Make your changes and commit them with descriptive messages.
+- Push your branch to your fork.
+- Create a pull request to merge your changes into the main branch of this repository.
+### License
+This project is licensed under the MIT License. Feel free to use, modify, and distribute it as needed.
